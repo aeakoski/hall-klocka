@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!--Behåller scalan på mindre enheter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='minimum-scale=1,maximum-scale=1,user-scalable=no' />
+    <!-- Fonta Awesome! -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- My CSS styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" >
+
+    <title>Hall - Clock</title>
+
+  </head>
+  <body onload="init()">
+    <div class="spacer">
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12">
+          <img src="./hall.png" alt="" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-sm-12">
+          <div id="clock"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-12">
+          <div id="date"></div>
+        </div>
+      </div>
+      <div id="misc" class="row">
+        <div id="day" class="it"></div>
+        <div class="hspace"></div>
+        <div id="doy" class="it"></div>
+        <div class="hspace"></div>
+        <div id="week" class="it"></div>
+      </div>
+
+    </div>
+
+
+    <!-- jQuerry & AJAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <!-- My JS files -->
+     <script src="./script.js"></script>
+
+  </body>
+</html>
